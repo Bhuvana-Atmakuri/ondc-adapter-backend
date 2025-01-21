@@ -1,4 +1,4 @@
-const WooCommerceSeller = require('../models/WooCommerceSeller.js');
+const WooCommerceSeller = require('../models/wooCommerceSeller.js');
 const { Binary } = require("mongodb");
 
 // Create a new WooCommerce seller
