@@ -28,9 +28,7 @@ app.use('/ondc/cart', cartRoutes)
 app.use('/ondc/search', searchRoutes)
 app.use('/ondc/orders', ordersRoute);
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-})
+
 
 app.listen(5000, () => {
   console.log(`Server running on port 5000!`);
