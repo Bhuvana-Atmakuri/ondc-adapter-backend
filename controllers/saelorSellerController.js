@@ -1,4 +1,4 @@
-const SaelorSeller = require('../models/SaelorSeller.js');
+const SaelorSeller = require('../models/saelorSeller.js');
 const { Binary } = require("mongodb");
 
 // shopLink: { type: String, required: true },
