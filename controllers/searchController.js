@@ -1,6 +1,6 @@
-const SaelorSeller = require('../models/saelorSeller.js');
-const ShopifySeller = require('../models/shopifySeller.js');
-const WooCommerceSeller = require('../models/woocommerceSeller.js');
+const SaelorSeller = require('../models/SaelorSeller.js');
+const ShopifySeller = require('../models/ShopifySeller.js');
+const WooCommerceSeller = require('../models/WooCommerceSeller.js');
 const { searchProductInShop } = require('../services/saleorService.js');
 const { searchProductInShopify } = require('../services/shopifyService.js');
 const WooCommerceService = require('../services/wooCommerceService.js');  // Import the service class
@@ -15,7 +15,7 @@ const searchProduct = async (req, res) => {
   try {
     // Fetch verified Saleor sellers
     const saleorSellers = await SaelorSeller.find({ status: 'Verified' });
-    // const wooCommerceSellers = await WooCommerceSeller.find({ status: 'Verified' });
+    const wooCommerceSellers = await WooCommerceSeller.find({ status: 'Verified' });
     const shopifySellers = await ShopifySeller.find({ status: 'Verified' });
 
     console.log('Verified Saleor Sellers:', saleorSellers);
