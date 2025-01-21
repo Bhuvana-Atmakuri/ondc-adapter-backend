@@ -15,7 +15,7 @@ const searchProduct = async (req, res) => {
   try {
     // Fetch verified Saleor sellers
     const saleorSellers = await SaelorSeller.find({ status: 'Verified' });
-    const wooCommerceSellers = await WooCommerceSeller.find({ status: 'Verified' });
+    // const wooCommerceSellers = await WooCommerceSeller.find({ status: 'Verified' });
     const shopifySellers = await ShopifySeller.find({ status: 'Verified' });
 
     console.log('Verified Saleor Sellers:', saleorSellers);
