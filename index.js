@@ -15,7 +15,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'https://deploy-mern-lwhq.vercel.app',
+  origin: 'https://ondc-adapter-frontend.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
