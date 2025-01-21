@@ -14,11 +14,7 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors({
-  origin: 'https://ondc-adapter-frontend.vercel.app/',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true,
-}));
+app.use(cors());
 
 app.use(express.json());
 
