@@ -1,4 +1,4 @@
-const { create } = require("../models/SaelorSeller.js");
+const { create } = require("../models/saelorSeller.js");
 const cartService = require("../services/cartService.js");
 const { completeDraftOrder, createDraftOrder } = require("../services/shopifyService.js");
 const { placeOrderInWooCommerce } = require("../woocom");
