@@ -86,7 +86,7 @@ const createDraftOrder = async (variantId, quantity, SHOPIFY_STORE_DOMAIN,SHOPIF
         lineItems: [
           { variantId: "${variantId}", quantity: ${quantity} }
         ],
-        email: "santhoshkowsalya2004@gmail.com"
+        email: "mugundhjb@gmail.com"
       }) {
         draftOrder {
           id
